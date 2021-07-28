@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1e2d3b;
+}
+
 .headband{
   display: flex;
   flex-direction: column;
@@ -19,4 +23,11 @@
 
 .headband .author, .year {
   color: grey
+}
+
+/* ! da togliere */
+
+.debug {
+  border: 1px solid greenyellow;
+  min-height: 50px;
 }
