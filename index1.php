@@ -29,8 +29,8 @@ Attraverso un’altra chiamata api, filtrare gli album per genere -->
     <div class="container my-5">
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5"> 
 
-            <div class="col px-4 my-2">
-              <div v-for="cd in cds" class="headband">
+            <div v-for="cd in cds" class="col px-4 my-2">
+              <div class="headband">
                 <img class="py-4" :src= "cd.poster" :alt= "cd.title">
                 <h3 class="title pb-4 text-uppercase  text-center"> {{cd.title}} </h3>
                 <div class="author"> {{cd.author}} </div>
