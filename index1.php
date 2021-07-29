@@ -23,6 +23,11 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
 Bonus:
 Attraverso un’altra chiamata api, filtrare gli album per genere -->
 
+  <div id="app">
+    
+  </div>
+
+  <script src="js/script.js"></script>
   
 </body>
 </html>
