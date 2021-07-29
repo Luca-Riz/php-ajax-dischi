@@ -14,6 +14,7 @@
   <!-- cdn bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="css/style.css">
   <title>php-ajax-dischi</title>
 </head>
 <body>
@@ -24,7 +25,21 @@ Bonus:
 Attraverso un’altra chiamata api, filtrare gli album per genere -->
 
   <div id="app">
-    
+
+    <div class="container my-5">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5"> 
+
+            <div class="col px-4 my-2">
+              <div v-for="cd in cds" class="headband">
+                <img class="py-4" :src= "cd.poster" :alt= "cd.title">
+                <h3 class="title pb-4 text-uppercase  text-center"> {{cd.title}} </h3>
+                <div class="author"> {{cd.author}} </div>
+                <div class="year pb-3"> {{cd.genre}} </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
   </div>
 
   <script src="js/script.js"></script>
